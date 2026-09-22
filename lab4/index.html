@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Форма для студентської картки</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Персональна інформація </h2>
+            <fieldset>
+                <legend>Надайте свої дані</legend>
+                <a>Повне ім'я</a>
+                <input type="text" placeholder="Ім'я">
+                <p></p>
+                <a>Електронна пошта</a>
+                <input type="email" placeholder="Електронна пошта">
+                <p></p>
+                <a>Пароль</a>
+                <input type="password" placeholder="Пароль">
+                <p></p>
+                <a>Вік</a>
+                <input type="number" placeholder="вік">
+                <p></p>
+                <a>Дата народження</a>
+                <input type="date" placeholder="Дата народження">
+                <p></p>
+                <a>Стать:</a>
+                <p></p>
+                <input type="radio" name="gender" value="male"> Чоловіча<p></p>
+                <input type="radio" name="gender" value="female"> Жіноча<p></p>
+                <input type="radio" name="gender" value="female"> Інша
+                <p></p>
+                <a>Мови:</a>
+                <p></p>
+                <input type="checkbox" name="language" value="ukrainian"> Українська<p></p>
+                <input type="checkbox" name="language" value="english"> Англійська<p></p>
+                <input type="checkbox" name="language" value="german"> Німецька<p></p>
+                <a>Країна:</a>
+                <select>
+                    <option value="select">Оберіть країну</option>
+                    <option value="ukraine">Україна</option>
+                    <option value="germany">Німеччина</option>
+                    <option value="usa">США</option>
+                </select>
+            </fieldset>
+        </section>
+        <section>
+            <h2>Навчальні дисципліни в коледжі</h2>
+            <fieldset>
+                <legend>Оберіть дисципліни</legend>
+                <select multiple>
+                    <option value="math">Математика</option>
+                    <option value="physics">Фізика</option>
+                    <option value="programming">Програмування</option>
+                    <option value="english">Англійська мова</option>
+                    <option value="chemistry">Хімія</option>
+                </select><p></p>
+                <a>Оцініть вашу зацікавленість у програмуванні</a>
+                <input type="range" min="0" max="10" step="1">
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Оцінка навичок</h2>
+            <fieldset>
+                <legend>Оцініть ваші навички</legend>
+                <a>Опишіть ваші навички</a><p></p>
+                <textarea rows="4" cols="50" placeholder="Опишіть ваші навички"></textarea>
+                <p></p>
+                <a>Завантажити резюме</a>
+                <input type="file" accept=".pdf,.doc,.docx"><p></p>
+                <a>Оберіть улюблений колір</a>
+                <input type="color"><p></p>
+                <a>Зручний час для навчання</a>
+                <input type="time"><p></p>
+                <input type="submit" value="Надіслати результати опитування">
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Student card by Oleksandr Radionov-Kiptelyi. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
