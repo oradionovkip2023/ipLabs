@@ -16,39 +16,45 @@
             <h2>Персональна інформація </h2>
             <fieldset>
                 <legend>Надайте свої дані</legend>
-                <a>Повне ім'я</a>
-                <input type="text" placeholder="Ім'я">
-                <p></p>
-                <a>Електронна пошта</a>
-                <input type="email" placeholder="Електронна пошта">
-                <p></p>
-                <a>Пароль</a>
-                <input type="password" placeholder="Пароль">
-                <p></p>
-                <a>Вік</a>
-                <input type="number" placeholder="вік">
-                <p></p>
-                <a>Дата народження</a>
-                <input type="date" placeholder="Дата народження">
-                <p></p>
-                <a>Стать:</a>
-                <p></p>
-                <input type="radio" name="gender" value="male"> Чоловіча<p></p>
-                <input type="radio" name="gender" value="female"> Жіноча<p></p>
-                <input type="radio" name="gender" value="female"> Інша
-                <p></p>
-                <a>Мови:</a>
-                <p></p>
-                <input type="checkbox" name="language" value="ukrainian"> Українська<p></p>
-                <input type="checkbox" name="language" value="english"> Англійська<p></p>
-                <input type="checkbox" name="language" value="german"> Німецька<p></p>
-                <a>Країна:</a>
-                <select>
-                    <option value="select">Оберіть країну</option>
-                    <option value="ukraine">Україна</option>
-                    <option value="germany">Німеччина</option>
-                    <option value="usa">США</option>
-                </select>
+                    <form action="submit.php" method="post">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Ім'я">
+                    <p></p>
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" placeholder="Електронна пошта">
+                    <p></p>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Пароль">
+                    <p></p>
+                    <label for="age">Вік:</label>
+                    <input type="number" id="age" name="age" placeholder="вік">
+                    <p></p>
+                    <label for="birthDate">Дата народження:</label>
+                    <input type="date" id="birthDate" name="birthDate" placeholder="Дата народження">
+                    <p></p>
+                    <label>Стать:</label>
+                    <p></p>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Чоловіча</label>
+                    <p></p>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Жіноча</label>
+                    <p></p>
+                    <input type="radio" name="gender" value="other" id="other">
+                    <label for="other">Інша</label>
+                    <p></p>
+                    <label>Мови:</label>
+                    <p></p>
+                    <input type="checkbox" name="language" value="ukrainian"> Українська<p></p>
+                    <input type="checkbox" name="language" value="english"> Англійська<p></p>
+                    <input type="checkbox" name="language" value="german"> Німецька<p></p>
+                    <a>Країна:</a>
+                    <select>
+                        <option value="select">Оберіть країну</option>
+                        <option value="ukraine">Україна</option>
+                        <option value="germany">Німеччина</option>
+                        <option value="usa">США</option>
+                    </select>
             </fieldset>
         </section>
         <section>
@@ -61,7 +67,8 @@
                     <option value="programming">Програмування</option>
                     <option value="english">Англійська мова</option>
                     <option value="chemistry">Хімія</option>
-                </select><p></p>
+                </select>
+                <p></p>
                 <a>Оцініть вашу зацікавленість у програмуванні</a>
                 <input type="range" min="0" max="10" step="1">
             </fieldset>
@@ -71,15 +78,19 @@
             <h2>Оцінка навичок</h2>
             <fieldset>
                 <legend>Оцініть ваші навички</legend>
-                <a>Опишіть ваші навички</a><p></p>
-                <textarea rows="4" cols="50" placeholder="Опишіть ваші навички"></textarea>
+                <label for="skills">Опишіть ваші навички:</label>
                 <p></p>
-                <a>Завантажити резюме</a>
-                <input type="file" accept=".pdf,.doc,.docx"><p></p>
-                <a>Оберіть улюблений колір</a>
-                <input type="color"><p></p>
-                <a>Зручний час для навчання</a>
-                <input type="time"><p></p>
+                <textarea rows="4" cols="50" id="skills" name="skills" placeholder="Опишіть ваші навички"></textarea>
+                <p></p>
+                <label for="resume">Завантажити резюме:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                <p></p>
+                <label for="favoriteColor">Оберіть улюблений колір:</label>
+                <input type="color" id="favoriteColor" name="favoriteColor">
+                <p></p>
+                <label for="studyTime">Зручний час для навчання:</label>
+                <input type="time" id="studyTime" name="studyTime">
+                <p></p>
                 <input type="submit" value="Надіслати результати опитування">
             </fieldset>
         </section>
