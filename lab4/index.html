@@ -12,7 +12,7 @@
         <h1>Форма для студентської картки</h1>
     </header>
     <main>
-        <form action="." method="post">
+        <form action="." method="post" enctype="multipart/form-data">
         <section>
             <h2>Персональна інформація </h2>
             <fieldset>
@@ -32,7 +32,7 @@
                     <label for="birthDate">Дата народження:</label>
                     <input type="date" id="birthDate" name="birthDate" placeholder="Дата народження">
                     <p></p>
-                    <label>Стать:</label>
+                    <label for="gender">Стать:</label>
                     <p></p>
                     <input type="radio" name="gender" value="male" id="male">
                     <label for="male">Чоловіча</label>
@@ -43,13 +43,19 @@
                     <input type="radio" name="gender" value="other" id="other">
                     <label for="other">Інша</label>
                     <p></p>
-                    <label>Мови:</label>
+                    <label for="languages">Мови:</label>
                     <p></p>
-                    <input type="checkbox" name="language" value="ukrainian"> Українська<p></p>
-                    <input type="checkbox" name="language" value="english"> Англійська<p></p>
-                    <input type="checkbox" name="language" value="german"> Німецька<p></p>
-                    <a>Країна:</a>
-                    <select>
+                    <input type="checkbox" name="language" value="ukrainian" id="ukrainian">
+                    <label for="ukrainian"> Українська</label>
+                    <p></p>
+                    <input type="checkbox" name="language" value="english" id="english">
+                    <label for="english"> Англійська</label>
+                    <p></p>
+                    <input type="checkbox" name="language" value="german" id="german">
+                    <label for="german"> Німецька</label>
+                    <p></p>
+                    <label for="country">Країна:</label>
+                    <select name="country" id="country">
                         <option value="select">Оберіть країну</option>
                         <option value="ukraine">Україна</option>
                         <option value="germany">Німеччина</option>
@@ -61,7 +67,7 @@
             <h2>Навчальні дисципліни в коледжі</h2>
             <fieldset>
                 <legend>Оберіть дисципліни</legend>
-                <select multiple>
+                <select multiple name="subjects" id="subjects">
                     <option value="math">Математика</option>
                     <option value="physics">Фізика</option>
                     <option value="programming">Програмування</option>
@@ -69,8 +75,8 @@
                     <option value="chemistry">Хімія</option>
                 </select>
                 <p></p>
-                <a>Оцініть вашу зацікавленість у програмуванні</a>
-                <input type="range" min="0" max="10" step="1">
+                <label for="interest">Оцініть вашу зацікавленість у програмуванні</label>
+                <input type="range" min="0" max="10" step="1" id="interest" name="interest">
             </fieldset>
         </section>
 
@@ -83,7 +89,7 @@
                 <textarea rows="4" cols="50" id="skills" name="skills" placeholder="Опишіть ваші навички"></textarea>
                 <p></p>
                 <label for="resume">Завантажити резюме:</label>
-                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" enctype="multipart/form-data">
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
                 <p></p>
                 <label for="favoriteColor">Оберіть улюблений колір:</label>
                 <input type="color" id="favoriteColor" name="favoriteColor">
