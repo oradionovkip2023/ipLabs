@@ -14,7 +14,6 @@ html {
     width: 100%;
     content: "";
     height: 2px;
-    background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0%,#979797),color-stop(50%,#C2C2C2),color-stop(100%,#979797));
 }
 .container {
     width: 1140px;
