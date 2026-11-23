@@ -7,14 +7,120 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="#">Home</a>
-        <a href="#">Trivia</a>
-        <a href="#">Categories</a>
-        <a href="#">Scores</a>
-        <a href="#">Subscribe</a>
-        <a href="#">Contact</a>
+    <header aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#trivia">Trivia</a>
+        <a href="#categories">Categories</a>
+        <a href="#scores">Scores</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#contact">Contact</a>
     </header>
-    
+
+    <main>
+        <section id="home">
+            <h1>World Trivia</h1>
+            <p>Welcome to World Trivia — a platform for daily brain teasers, surprising facts, and competitive quizzes from around the globe. Test your knowledge across different fields and climb to the top of our leaderboard.</p>
+        </section>
+
+        <section id="trivia">
+            <h2>Trivia</h2>
+            <div>
+                <img src="https://placehold.co/150x100/0400ff/ffffff?text=Space" alt="Illustration representing outer space silence">
+                <div>
+                    <h3>Silence in Space</h3>
+                    <p>Sound cannot travel in the vacuum of outer space because there is no air or medium to carry sound waves between particles.</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://placehold.co/150x100/0654b3/ffffff?text=Ocean" alt="Illustration representing the deep ocean">
+                <div>
+                    <h3>Mariana Trench</h3>
+                    <p>The deepest part of the world's oceans reaches nearly 11 kilometers down — deeper than Mount Everest is tall.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#categories">Science</a></li>
+                <li><a href="#categories">History</a></li>
+                <li><a href="#categories">Geography</a></li>
+                <li><a href="#categories">Technology</a></li>
+                <li><a href="#categories">Movies &amp; Music</a></li>
+            </ul>
+        </section>
+
+        <section id="scores">
+            <h2>Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Oleksandr</td>
+                        <td>980</td>
+                        <td>Ukraine</td>
+                        <td>Technology</td>
+                        <td>2025-05-10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Iryna</td>
+                        <td>945</td>
+                        <td>Ukraine</td>
+                        <td>Science</td>
+                        <td>2025-05-11</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Marko</td>
+                        <td>910</td>
+                        <td>Poland</td>
+                        <td>History</td>
+                        <td>2025-05-12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="subscribe">
+            <h2>Subscribe</h2>
+            <p>Get a fresh brain teaser delivered every morning.</p>
+            <button type="button" aria-label="Subscribe to Puzzle of the Day">
+                Puzzle of the Day <span class="sr-only">(click to subscribe)</span>
+            </button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Have a question or want to suggest a trivia fact? Send us a message.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 World Trivia</p>
+    </footer>
 </body>
 </html>
